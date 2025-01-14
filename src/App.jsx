@@ -5,7 +5,7 @@ import HomeScreen from "./HomeScreen";
 import ActivityTracking from "./ActivityTracking";
 import MedicineReminder from "./MedicineReminder";
 import Location from "./Location";
-import BackgroundLocationScreen from "./src/screens/BackgroundLocationScreen";
+import BackgroundLocationScreen from "./screens/BackgroundLocationScreen";
 import DataHistoryScreen from "./DataHistoryScreen";
 import LocationHistoryScreen from "./LocationHistoryScreen";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Button, StyleSheet } from "react-native";
-import NativeLocationTracking from "./specs/NativeLocationTracking";
+import NativeLocationTracking from "../../specs/NativeLocationTracking";
 
 const BackgroundLocationScreen = () => {
   const startService = () => {
