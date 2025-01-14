@@ -96,6 +96,10 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            ndk {
+                // Include the architectures you are targeting
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            }
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
@@ -110,9 +114,10 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+    implementation "com.google.android.gms:play-services-location:${googlePlayServicesVersion}"
 
-    if (hermesEnabled.toBoolean()) {
-        implementation("com.facebook.react:hermes-android")
+    if (hermesEnabled) {
+        implementation("com.facebook.react:hermes-android:0.78.2")  // Make sure this matches your React Native version
     } else {
         implementation jscFlavor
     }

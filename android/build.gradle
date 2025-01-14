@@ -6,13 +6,18 @@ buildscript {
         targetSdkVersion = 34
         ndkVersion = "26.1.10909125"
         kotlinVersion = "1.9.24"
+        googlePlayServicesVersion = "21.0.1"
+
     }
     repositories {
         google()
         mavenCentral()
+        maven {
+            url new File(rootProject.projectDir, 'node_modules/react-native/android')
+        }
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
+        classpath("com.android.tools.build:gradle:8.1.1")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
     }
