@@ -55,9 +55,15 @@ Now that you have successfully run the app, let's modify it.
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
+## Project Description
 
-You've successfully run and modified your React Native App. :partying_face:
+This react natice based mobile application uses
+1. Native Android Service (using Kotlin code) and use in React Native via module to capture location while application is minimized. 
+2. SQLite database to store location co ordinates captured while in background
+3. Schedule Local notification to remind user for medicine even when application is killed 
+4. Use google map to plot user path
+5. Gather sensor data (Accelerometer,Gyroscope,Magetometer,light sensor) and based on the change in values display user activity.
+
 
 ### Now what?
 This project mainly focuses on Android platform later a new version with ios support may release

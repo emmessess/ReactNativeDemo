@@ -6,7 +6,7 @@ import ActivityTracking from "./ActivityTracking";
 import MedicineReminder from "./MedicineReminder";
 import Location from "./Location";
 import BackgroundLocationScreen from "./src/screens/BackgroundLocationScreen";
-import DataHistoryScreen from "./DataHistoryScreen";
+import DataHistoryScreen from "./src/screens/DataHistoryScreen";
 import LocationHistoryScreen from "./LocationHistoryScreen";
 
 const Stack = createStackNavigator();
