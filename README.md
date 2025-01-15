@@ -34,12 +34,16 @@ yarn android
 
 Background Location Tracking
 	•	Uses native Android services (Kotlin) to capture user location even when the app is minimized.
+
 	2.	SQLite Integration
 	•	Stores location coordinates captured during background service execution in a local SQLite database for later use.
+
 	3.	Local Notifications
 	•	Schedules notifications to remind users of tasks, such as taking medicine, even when the app is killed.
+
 	4.	Google Maps Integration
 	•	Plots the user’s location path on Google Maps.
+   
 	5.	Sensor Data Tracking
 	•	Captures data from the following sensors:
 	•	Accelerometer
